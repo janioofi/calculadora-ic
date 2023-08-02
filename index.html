@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <title>IC</title>
+    <title>Calculadora de IC</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,17 +14,17 @@
         <form action="">
           <h1>Calculo de Índice de Conicidade</h1>
           <div class="input-single">
-            <input class="input" type="number" name="altura" id="altura" placeholder="Altura"/>
+            <input class="input" step=".01" type="number" name="altura" id="altura" placeholder="Altura"/>
           </div>
 
           <div class="input-single">
-            <input class="input" type="number" name="peso" id="peso" placeholder="Peso"/>
+            <input class="input" step=".01" type="number" name="peso" id="peso" placeholder="Peso"/>
           </div>
 
           <div class="input-single">
-            <input class="input" type="number" name="circunferencia" id="circunferencia" placeholder="Circunferencia"/>
+            <input class="input" step=".01" type="number" name="circunferencia" id="circunferencia" placeholder="Circunferencia"/>
           </div>
-          <div class="btn"><input type="submit" value="Calcular" onclick="calcular()"></div>
+          <div class="btn"><input type="button" value="Calcular" onclick="calcular()"></div>
           <div class="resultado">
             <p id="resultado"></p>
           </div>
