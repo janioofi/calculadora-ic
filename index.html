@@ -9,60 +9,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <header>
-        <h1>Calculadora de Índice de Conicidade</h1>
-      </header>
-      <div class="dados">
-        <form>
-          <p>
-            <input
-              type="number"
-              name="size"
-              id="size_1"
-              placeholder="Ex: 174cm > 1.74m"
-            />
-            <label for="size_1">Altura</label>
-          </p>
-          <p>
-            <input
-              type="number"
-              name="size"
-              id="size_2"
-              placeholder="Ex: 80kg"
-            />
-            <label for="size_2">Peso</label>
-          </p>
-          <p>
-            <input
-              type="number"
-              name="size"
-              id="size_3"
-              placeholder="Ex: 90cm > 0.9m"
-            />
-            <label for="size_3">Circunferencia</label>
-          </p>
+    <section class="form-container">
+      <div class="container">
+        <form action="">
+          <h1>Calculo de Índice de Conicidade</h1>
+          <div class="input-single">
+            <input class="input" type="number" name="altura" id="altura" placeholder="Altura"/>
+          </div>
 
-          <input type="button" value="Calcular" onclick="calcular()" />
+          <div class="input-single">
+            <input class="input" type="number" name="peso" id="peso" placeholder="Peso"/>
+          </div>
+
+          <div class="input-single">
+            <input class="input" type="number" name="circunferencia" id="circunferencia" placeholder="Circunferencia"/>
+          </div>
+          <div class="btn"><input type="submit" value="Calcular" onclick="calcular()"></div>
+          <div class="resultado">
+            <p id="resultado"></p>
+          </div>
+          <div class="exemplos">
+            <p>Altura: 174cm > 1.74</p>
+            <p>Peso: 70kg > 70</p>
+            <p>Circunferencia: 89cm > 0.89</p>
+          </div>
+          <p>Para saber mais sobre o Índice de Conicidade, se está dentro do esperado para seu gênero, <a href="https://andreiatorres.com/blog/2022/6/29/conicidade" target="_blank">Leia este artigo</a> ou <a href="https://www.youtube.com/watch?v=m-VX3JBoeEc" target="_blank">Veja esse video.</a></p>
         </form>
-      </div>
-      <div id="resultado"></div>
-      <div class="informacoes">
-        <h2>O que é índice de conicidade (IC)?</h2>
-        <small>
-          <p>
-            O índice de conicidade (IC), consiste em um parâmetro antropométrico
-            que determina o risco cardiometabólico fundamentado no períneo da
-            cintura e exprime o risco de enfermidades associadas à obesidade e a
-            distribuição de tecido adiposo..
-          </p>
-          <p class="img">
-            <img
-              src="assets/exemplo.pngsdads"
-              alt="Exemplos de biotipos, Biconcave, Cylindrical, Bionic"
-            />
-          </p>
-        </small>
       </div>
     </section>
     <script src="script.js"></script>
